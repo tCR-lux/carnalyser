@@ -1,14 +1,14 @@
 [package]
-name        = "ecu-analyzer"
+name        = "carnalyser"
 version     = "0.1.0"
 edition     = "2021"
 authors     = ["Cédric Renzi"]
-description = "ECU diagnostic data analyzer – MaxiECU XML, solenoid diff, engine analysis, acoustic DFT"
+description = "Carnalyser - ECU diagnostic data analyzer – MaxiECU XML, solenoid diff, engine analysis, acoustic DFT"
 license     = "MIT"
 repository  = ""
 
 [[bin]]
-name = "ecu-analyzer"
+name = "carnalyser"
 path = "src/main.rs"
 
 [dependencies]

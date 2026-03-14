@@ -18,11 +18,11 @@ fn main() -> eframe::Result<()> {
         viewport: egui::ViewportBuilder::default()
             .with_inner_size([1400.0, 900.0])
             .with_min_inner_size([800.0, 600.0])
-            .with_title("ECU Analyzer — © Cédric Renzi"),
+            .with_title("Carnalyser - ECU Diagnostic Analyzer — © Cédric Renzi"),
         ..Default::default()
     };
     eframe::run_native(
-        "ECU Analyzer",
+        "Carnalyser - ECU Diagnostic Analyzer",
         native_options,
         Box::new(|cc| Ok(Box::new(app::EcuAnalyzerApp::new(cc)))),
     )

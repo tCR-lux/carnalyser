@@ -1,9 +1,9 @@
 # =============================================================================
-# ECU Analyzer — Makefile
+# Carnalyser - ECU Diagnostic Analyzer — Makefile
 # Copyright (c) 2026 Cédric Renzi — GPL-3.0-only / Commercial License
 # =============================================================================
 
-BINARY    := ecu-analyzer
+BINARY    := carnalyser
 CARGO     := cargo
 TARGET    := target/release/$(BINARY)
 TARGET_DBG:= target/debug/$(BINARY)
@@ -16,7 +16,7 @@ TARGET_DBG:= target/debug/$(BINARY)
 # ── Help ─────────────────────────────────────────────────────────────────────
 help:
 	@echo ""
-	@echo "  ECU Analyzer — build helper"
+	@echo "  Carnalyser - ECU Diagnostic Analyzer — build helper"
 	@echo "  Copyright (c) 2026 Cédric Renzi"
 	@echo ""
 	@echo "  Usage: make <target>"

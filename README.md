@@ -1,4 +1,4 @@
-# ECU Analyzer
+# Carnalyser - ECU Diagnostic Analyzer
 
 **Copyright © 2026 Cédric Renzi -- See licensing below**
 
@@ -134,7 +134,7 @@ Acoustic → tab_acoustic::draw_acoustic()
 ```bash
 # Prerequisites: Rust toolchain (rustup.rs), cargo
 cargo build --release
-# Binary: target/release/ecu-analyzer
+# Binary: target/release/carnalyser
 ```
 
 
@@ -149,7 +149,7 @@ Typical Workflow with Makefile:
 
 ## Usage
 
-1. Open `ECU Analyzer`
+1. Open `Carnalyser - ECU Diagnostic Analyzer`
 2. Click **📂 Load XML** → select a MaxiECU XML file
 3. Browse **Statistics** for acquisition overview
 4. Go to **Channels** → select Y channels + X axis → interactive plot

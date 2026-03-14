@@ -11,7 +11,7 @@
 The software shall be modular, sublicense is possible for its commercial usage (we sell the license).
 
 # Project architecture
-ecu-analyzer/
+carnalyser/
 ├── Cargo.toml
 ├── LICENSE
 ├── README.md
