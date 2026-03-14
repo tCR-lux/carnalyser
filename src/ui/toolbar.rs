@@ -18,8 +18,11 @@ fn shorten_path_middle(path: &str, max_len: usize) -> String {
 pub fn draw_toolbar(app: &mut EcuAnalyzerApp, ctx: &Context) {
     TopBottomPanel::top("toolbar").show(ctx, |ui| {
         ui.horizontal(|ui| {
-            ui.heading("🔧 ECU Analyzer");
+            ui.heading("Analyzer");
             ui.separator();
+            
+            ui.heading("🚘💻 ECU");
+            // ui.label(egui::RichText::new("🚘💻 ECU").size(22.0).strong());
 
             // Load XML
             if ui.button("📂 Load XML").clicked() {
@@ -42,8 +45,11 @@ pub fn draw_toolbar(app: &mut EcuAnalyzerApp, ctx: &Context) {
             ui.selectable_value(&mut app.active_tab, ActiveTab::Statistics,  "📊 Statistics");
             ui.selectable_value(&mut app.active_tab, ActiveTab::Channels,    "📈 Channels");
             ui.selectable_value(&mut app.active_tab, ActiveTab::Derived,     "⚙️ Derived");
-            
+                       
             ui.separator();
+
+            ui.heading("🎶 NVH");
+            // ui.label(egui::RichText::new("🎶 NVH").size(22.0).strong());
             
             // Load WAV
             if ui.button("🔊 Load WAV").clicked() {
@@ -65,6 +71,9 @@ pub fn draw_toolbar(app: &mut EcuAnalyzerApp, ctx: &Context) {
             ui.selectable_value(&mut app.active_tab, ActiveTab::Acoustic,    "🎵 Acoustic");
 
             ui.separator();
+
+            ui.heading("📄 Status");
+            // ui.label(egui::RichText::new("🗃️ Status").size(22.0).strong());
 
             ui.with_layout(egui::Layout::right_to_left(egui::Align::Center), |ui| {
                 // Error
